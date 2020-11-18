@@ -1,3 +1,3 @@
 # My first website : JS / CSS / HTML
 
-(https://www.floriane-planchenault-osteopathe.com/)
+https://www.floriane-planchenault-osteopathe.com/
