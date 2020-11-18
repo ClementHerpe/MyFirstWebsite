@@ -1,0 +1,726 @@
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    max-width: 100%;
+}
+
+header {
+    height: 100vh;
+}
+
+.entete {
+    background-color: #ACBDAF;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.entete p {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 600;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.entete li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu p {
+    padding: 0 2.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.landing {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(90deg, rgba(71,66,64,1) 0%, rgba(142,131,129,0.60) 76%, rgba(189,175,172,1) 100%), url(../images/fond.png) center no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.landing--logo{
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.landing--logo img {
+    margin: 1em;
+    height: 450px;
+}
+
+.landing--titres {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing--titres h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  margin-bottom: 4rem;
+}
+
+.landing--titres h2 {
+    font-size: 1.8rem;
+    color:white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+  }
+
+.landing--titres button {
+    margin-top: 2rem;
+    background-color: #acbdaf;
+    border: none;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    width: 50%;
+  }
+  
+.landing--titres button a {
+    color: white;
+  }
+
+.warningcovid {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.warningcovid img {
+    height: 50px;
+    width: 50px;
+}
+
+.warningcovid p {
+  color: yellow;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.warningcovid :hover {
+    cursor: pointer;
+}
+
+.textecovid {
+  background-color: #BDAFAC;
+  border-radius: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 70vw;
+  padding: 50px;
+  display: none;
+}
+
+.textecovid p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* SECTION OSTEOPATHIE */
+
+#section--osteopathie {
+    background: linear-gradient(90deg, rgba(189,175,172,1) 0%, rgba(189,175,172,0.6775443453748686) 54%, rgba(231,225,218,0.33020540980063906) 100%), url(../images/fond1.png) center no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.titre--section {
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.container--principal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texte--osteopathie {
+    width: 40%;
+}
+
+.boxes--client {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text--magic {
+    color: white;
+    background: rgba(47,44,43,0.9);
+    padding: 235px 1em;
+    position: absolute;
+    opacity: 0;
+    transition: linear 1s all;
+}
+
+.text--magic:hover {
+    opacity: 1;
+}
+
+.box--typepatient {
+    display: flex;
+    margin-bottom: 2em;
+    width: 470px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    background : linear-gradient(90deg, rgba(255,255,255,0.6474964985994398) 0%, rgba(254,254,254,0.6755077030812324) 100%), url(../images/image1-osteopathie.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 2s;
+    position: relative;
+}
+
+.box--typepatient:hover {
+    transform: scale(1.2);
+}
+
+.box--typepatient:nth-child(2) {
+    display: flex;
+    margin-bottom: 2em;
+    width: 470px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    background : linear-gradient(90deg, rgba(255,255,255,0.6474964985994398) 0%, rgba(254,254,254,0.6755077030812324) 100%), url(../images/image2-osteopathie.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box--typepatient:nth-child(3) {
+    display: flex;
+    margin-bottom: 2em;
+    width: 470px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    background : linear-gradient(90deg, rgba(255,255,255,0.6474964985994398) 0%, rgba(254,254,254,0.6755077030812324) 100%), url(../images/Image3-osteopathie.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box--typepatient:nth-child(4) {
+    display: flex;
+    margin-bottom: 2em;
+    width: 470px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    background : linear-gradient(90deg, rgba(255,255,255,0.6474964985994398) 0%, rgba(254,254,254,0.6755077030812324) 100%), url(../images/Image4-osteopathie.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box--typepatient h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.texte--osteopathie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.texte--osteopathie p {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.texte--osteopathie h3 {
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.texte--osteopathie li {
+    font-size: 1em;
+    text-align: justify;
+    font-weight: 500;
+    margin-bottom: 1em;
+    list-style: inside;
+    margin-left: 2em;
+}
+
+/* VOTRE OSTEOPATHE */
+
+#section--presentation {
+    background: url(../images/fond-votre-osteopathe.png) center no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.top--container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo--perso img {
+    height: 300px;
+}
+
+.details--persos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.details--persos h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
+.details--persos h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.bottom--container {
+    display: flex;
+    justify-content: center;
+    margin-left: 7em;
+    margin-right: 7em;
+    }
+
+.bottom--container h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5em;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+.bottom--container p {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.bottom--container li {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.liste--formations {
+    display: flex;
+    flex-direction: column;
+}
+
+.partie--gauche__presentation {
+    width: 45%;
+    padding: 3em 5em;
+    background-color: #BDAFAC;
+}
+
+.partie--droite__presentation {
+    width: 45%;
+    padding: 3em 5em;
+    background-color: #E7E1DA;
+}
+
+.liste--experiences {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.liste--experiences img {
+    height: 100px;
+    transform: translateX(100%);
+}
+
+.liste--formations li {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CONSULTATION */
+
+#section--consultation {
+    background-color: #E7E1DA;
+    padding-bottom: 50px;
+}
+
+#section--consultation h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.text--intro p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container--process {
+    display: flex;
+    padding-left: 10em;
+}
+
+.left--part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.left--block {
+    display: flex;
+    align-items: center;
+}
+
+.block--text {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.block--text svg {
+    margin-left: 70%;
+}
+
+.left--block img {
+    height: 150px;
+}
+
+.right--part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5em;
+}
+
+.disclaimer--remboursement {
+    text-align: center;
+    margin: 1em 2em 0 2em;
+    padding: 3em 5em;
+    background-color: white;
+}
+
+.disclaimer--remboursement p {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.disclaimer--remboursement a {
+    color: #acbdaf;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+/* CONTACT */
+
+#section--contact {
+    background: linear-gradient(90deg, rgba(47,44,43,1) 0%, rgba(189,175,172,0.80) 100%), url(../images/fond-contact.png) center no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 100px;
+    color: white;
+}
+
+#section--contact img {
+    height: 100px;
+    max-width: 100px;
+}
+
+.contact--means {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.contact--means p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact--box {
+    padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Media queries */
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-device-width : 1066px) {
+    .menu p {
+        padding: 0 0.5em;
+    }
+
+
+    .landing--titres {
+        padding-top: 100px;
+    }
+
+    .container--principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texte--osteopathie {
+        width: 80%;
+    }
+
+    .boxes--client {
+        margin-top: 50px;
+        width: auto;
+    }
+
+    .top--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partie--gauche__presentation {
+        width: 80%;
+    }
+
+    .partie--droite__presentation {
+        width: 80%;
+    }
+
+    .container--process {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .frise--middle {
+        display: none;
+    }
+
+    .left--part {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left--block {
+        width: 80%;
+    }
+
+    .left--block h2 {
+        text-align: center;
+    }
+
+    .block--text {
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+
+    .block--text svg {
+        margin-left: 35%;
+    }
+
+    .right--part {
+        flex-direction: row;
+        padding-left: 0;
+        padding-bottom: 50px;
+        
+    }
+}
+
+/* Telephones (portrait) ----------- */
+@media only screen and (max-device-width : 700px) {
+    .landing--logo {
+        display: none;
+    }
+
+    .contact--means {
+        flex-direction: column;
+    }
+
+    .contact--means p {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Petit */
+@media only screen and (max-device-width : 560px) {
+    .entete {
+        display: none;
+    }
+
+    .titre--section {
+        font-size: 3em;
+    }
+
+    .bottom--container p {
+        font-size: 1em;
+    }
+
+    .bottom--container li {
+        font-size: 1em;
+    }
+
+    .liste--experiences img {
+        transform: translateX(10%);
+    }
+
+    .left--block img {
+        display: none;
+    }
+
+    .right--part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right--part svg {
+        margin-bottom: 50px;
+    }
+
+    .boxes--client {
+        align-items: center;
+    }
+
+    .box--typepatient {
+        width: 350px;
+        height: 160px;
+    }
+
+    .box--typepatient:nth-child(2) {
+        width: 350px;
+        height: 160px;
+    }
+
+    .box--typepatient:nth-child(3) {
+        width: 350px;
+        height: 160px;
+    }
+
+    .box--typepatient:nth-child(4) {
+        width: 350px;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-device-width : 425px) {
+    .landing--titres h1 {
+        font-size: 2em;
+    }
+
+    #section--osteopathie {
+        margin-top: 0px;
+    }
+
+    .liste--experiences img {
+        transform: translateX(25%);
+    }
+
+    .bottom--container{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    #section--presentation {
+        padding-bottom: 100px;
+    }
+
+    .partie--gauche__presentation {
+        padding: 0 2em;
+    }
+
+    .partie--droite__presentation {
+        padding: 0 2em;
+    }
+
+    .disclaimer--remboursement a {
+        font-size: 1em;
+    }
+}
+
+/*
+@media only screen and (max-device-width : 975px) {
+    .section--osteopathie {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-device-width : 380px) {
+
+    .section--osteopathie {
+        margin-top: 100px;
+    }
+}
+
+*/
